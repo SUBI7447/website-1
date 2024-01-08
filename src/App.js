@@ -25,13 +25,13 @@ const App = () => {
     <div  className='full-page-container'>
     <Canvas>
       <ambientLight />
-      <pointLight position={[10, 10, 10]} />
+      <pointLight position={[10, 20, 10]} />
 
       {/* Set up the environment texture using a cube map */}
       <Environment preset="warehouse" />
 
       {/* Adjust the camera position */}
-      <perspectiveCamera position={[0, 0, 5]} />
+      <perspectiveCamera position={[0, 20, 0]} />
 
       <Model />
 
