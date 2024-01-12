@@ -1,15 +1,15 @@
 const canvas = document.querySelector('.canvas');
 const context = canvas.getContext("2d");
 let ball = { frame: 0 };
-let frameCount;
-const currentFrame = (index) => `./mlsc/${(index + 1).toString()}.jpg`;
+const frameCount=41;
+
 const imgs = [];
 
 function init() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
-    frameCount = window.innerWidth <= 768 ? 28 : 41;
+    path = window.innerWidth <= 768 ? 'mlsc_phone' : 'mlsc';
+    const currentFrame = (index) => `./${path}/${(index + 1).toString()}.jpg`;
 
     for (let i = 0; i < frameCount; i++) {
         const img = new Image();
