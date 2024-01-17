@@ -56,7 +56,7 @@
     background-color: #047ad2;
     color: white;
     padding: 20px;
-    border: 4px solid #223a60;
+    border:0;
     cursor: pointer;
 }
 .application:hover{

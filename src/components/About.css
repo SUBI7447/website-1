@@ -73,10 +73,10 @@
 .learn-more{
     margin: 20px auto;
     min-width: max-content;
-    width: 50%;
+    width: 50%; 
     padding: 4px;
     grid-column: span 2;
-    border: 4px solid #223a60;
+    border: 0;
     color: #fff;
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
