@@ -82,3 +82,23 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width:768px){
+    .home{
+        margin-top: 90px;
+    }
+    .home-image{
+        margin-bottom: 20px;
+        height: 20vh;
+    }
+    .mlsc-text{
+        font-size: 1rem;
+    }
+    .mlsc-about-text{
+        font-size: 11px;
+    }
+    .application{
+        width: 200px;
+        font-size: 14px;
+    }
+}

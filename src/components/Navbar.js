@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg'
 import logo1 from '../assets/logo1.png'
 import logo2 from '../assets/logo2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faWhatsapp, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faWhatsapp, faDiscord, faMicrosoft} from '@fortawesome/free-brands-svg-icons'
 
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <div>
             {isMobile ? (
-                <img className="menu-button" src={logo1} alt="menu button" onClick={toggleMenu} />
+                <div className="menu-button" onClick={toggleMenu} ><FontAwesomeIcon icon={faMicrosoft} /></div>
             ) : null}
             <div className={`navbar ${menuOpen? 'open' : ''}`}>
                 <div className='icon'><img src={isMobile ? logo2 : logo} alt='microsoft logo' /></div>
