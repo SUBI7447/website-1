@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import './Nav-media.css'
 import logo from '../assets/logo.svg'
-import logo1 from '../assets/logo1.png'
+import mit from '../assets/mit.jpg'
+import mit1 from '../assets/mit1.png'
+import { Link, animateScroll as scroll } from 'react-scroll';
 import logo2 from '../assets/logo2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faWhatsapp, faDiscord, faMicrosoft} from '@fortawesome/free-brands-svg-icons'
@@ -16,9 +18,6 @@ const Navbar = () => {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
     }
-
-
-
 
     const toggleDropdown = () => {
         if (!isMobile) {
@@ -38,27 +37,27 @@ const Navbar = () => {
             <div className={`navbar ${menuOpen? 'open' : ''}`}>
                 <div className='icon'><img src={isMobile ? logo2 : logo} alt='microsoft logo' /></div>
                 <div className='nav-content'>
-                    <a className='nav-button'>Home</a>
-                    <a className='nav-button'>About</a>
-                    <a className='nav-button'>Vision</a>
+                    <Link to='home' smooth={true} duration={500} className='nav-button'>Home</Link>
+                    <Link to="about" smooth={true} duration={500} className='nav-button'>About</Link>
+                    <Link to="vision" smooth={true} duration={500} className='nav-button'>Vision</Link>
                     <div className='dropdown'>
-                        <a onMouseEnter={toggleDropdown} className='nav-button'>Benefits</a>
+                        <Link to="benefits" smooth={true} duration={500} onMouseEnter={toggleDropdown} className='nav-button'>Benefits</Link>
                         <div onMouseLeave={toggleDropdown} className={`dropdown-content ${isOpen ? 'open' : ''}`}>
-                            <a className='benefit-button '>Developers</a>
-                            <a className='benefit-button '>Designers</a>
-                            <a className='benefit-button '>Artists</a>
-                            <a className='benefit-button '>Gamers</a>
-                            <a className='benefit-button end'>Business</a>
+                            <Link to="benefits" smooth={true} duration={500} className='benefit-button developers'>Developers</Link>
+                            <Link to="benefits" smooth={true} duration={500} className='benefit-button creators'>Creators</Link>
+                            <Link to="benefits" smooth={true} duration={500} className='benefit-button innovators'>Innovators</Link>
+                            <Link to="benefits" smooth={true} duration={500} className='benefit-button enthusiasts'>Microsoft Enthusiasts</Link>
                         </div>
                     </div>
-                    <a className='nav-button'>Apply</a>
-                    <a className='nav-button'>Contact</a>
+                    <Link to="apply" smooth={true} duration={500} className='nav-button'>Apply</Link>
+                    <Link to="contact" smooth={true} duration={500} className='nav-button'>Contact</Link>
                 </div>
                 <div className='icon-content'>
-                    <a className='brand-icon'><FontAwesomeIcon icon={faDiscord} /></a>
-                    <a className='brand-icon'><FontAwesomeIcon icon={faWhatsapp} /></a>
-                    <a className='brand-icon'><FontAwesomeIcon icon={faGithub} /></a>
+                    <a className='brand-icon' href="https://discord.gg/b5zgc9XRaA" target='_blank'><FontAwesomeIcon icon={faDiscord} /></a>
+                    <a className='brand-icon' href="https://chat.whatsapp.com/CVdLrkQgRqe2grRIQdMF07" target='_blank' ><FontAwesomeIcon icon={faWhatsapp} /></a>
+                    <a className='brand-icon' href="https://github.com/MLSC-MIT-ADT" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
                 </div>
+                <div className='mit-icon'><img src={isMobile?mit1:mit} alt='microsoft logo' /></div>
             </div>
         </div>
     )

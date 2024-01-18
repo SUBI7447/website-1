@@ -53,7 +53,7 @@ const About = () => {
                         <img src={about1} alt="events held by microsoft"/>
                         <img src={about2} alt="events held by microsoft"/>
                     </div>
-            <button className="learn-more">Learn More</button>
+            <a className="learn-more" href="https://mvp.microsoft.com/studentambassadors" target="_blank">Learn More</a>
             </div>
         </div>
     )

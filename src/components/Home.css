@@ -58,6 +58,8 @@
     padding: 20px;
     border:0;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 .application:hover{
     filter: brightness(0.8);

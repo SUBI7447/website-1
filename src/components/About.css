@@ -83,6 +83,8 @@
     background-color: #047ad2;
     transition: background-color 0.3 ease-in-out;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .learn-more:hover{

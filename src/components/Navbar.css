@@ -12,6 +12,9 @@
     height: 100px;
     background-color: white;
 }
+.brand-icon{
+    color: #223a60;
+}
 
 .menu-button{
     position: fixed;
@@ -27,6 +30,14 @@
         width: 15vw;
         max-height: 80px;
         margin: 20px 40px;
+    }
+}
+
+.mit-icon{
+    img{
+        object-fit: cover;
+        max-height: 80px;
+        margin: 10px 20px 20px 40px; 
     }
 }
 
@@ -54,15 +65,14 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 100vw;
+    width: 110vw;
     top: 200%;
     left: 50%;
     background-color: white;
     transform: translate(-50%, 0);
-    box-shadow: 2px 2px 2px 0px #0000000f;
+    box-shadow: 2px 2px 2px #0000000f;
     z-index: 1;
     height: 0%;
-
     overflow: hidden;
     transition: height 0.3s ease-in-out;
 }
@@ -148,4 +158,18 @@
 
 .brand-icon:active {
     color: #047ad2;
+}
+
+.benefit-button.developers{
+    color: #f35325;
+}
+.benefit-button.creators{
+    color: #81bc06;
+}
+
+.benefit-button.innovators{
+    color: #05a6f0;
+}
+.benefit-button.enthusiasts{
+    color: #ffba08;
 }
