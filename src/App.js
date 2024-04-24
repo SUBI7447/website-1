@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Events from './components/Events';
 import About from './components/About';
 import Vision from './components/Vision';
 import Benefits from './components/Benefits';
@@ -15,6 +16,9 @@ function App() {
       <Navbar/>
       <Element name='home'>
         <Home/>
+      </Element>
+      <Element name='events'>
+        <Events/>
       </Element>
       <Element name='about'>
       <About/>

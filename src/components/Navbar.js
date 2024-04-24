@@ -38,6 +38,7 @@ const Navbar = () => {
                 <div className='icon'><img src={isMobile ? logo2 : logo} alt='microsoft logo' /></div>
                 <div className='nav-content'>
                     <Link to='home' smooth={true} duration={500} className='nav-button'>Home</Link>
+                    <Link to='events' smooth={true} duration={500} className='nav-button'>Events</Link>
                     <Link to="about" smooth={true} duration={500} className='nav-button'>About</Link>
                     <Link to="vision" smooth={true} duration={500} className='nav-button'>Vision</Link>
                     <div className='dropdown'>
