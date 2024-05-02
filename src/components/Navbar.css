@@ -12,15 +12,16 @@
     height: 100px;
     background-color: white;
 }
-.brand-icon{
+
+.brand-icon {
     color: #223a60;
 }
 
-.menu-button{
+.menu-button {
     position: fixed;
     font-size: 30px;
-    top:20px;
-    left:20px;
+    top: 20px;
+    left: 20px;
     z-index: 100;
 }
 
@@ -33,11 +34,11 @@
     }
 }
 
-.mit-icon{
-    img{
+.mit-icon {
+    img {
         object-fit: cover;
         max-height: 80px;
-        margin: 10px 20px 20px 40px; 
+        margin: 10px 20px 20px 40px;
     }
 }
 
@@ -150,6 +151,8 @@
     height: 100%;
     margin-left: 20vw;
     color: #223a60;
+    flex-direction: row-reverse;
+    gap: 30px;
 }
 
 .brand-icon {
@@ -160,16 +163,18 @@
     color: #047ad2;
 }
 
-.benefit-button.developers{
+.benefit-button.developers {
     color: #f35325;
 }
-.benefit-button.creators{
+
+.benefit-button.creators {
     color: #81bc06;
 }
 
-.benefit-button.innovators{
+.benefit-button.innovators {
     color: #05a6f0;
 }
-.benefit-button.enthusiasts{
+
+.benefit-button.enthusiasts {
     color: #ffba08;
 }
