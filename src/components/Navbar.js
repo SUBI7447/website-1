@@ -7,7 +7,7 @@ import mit1 from '../assets/mit1.png'
 import { Link, animateScroll as scroll } from 'react-scroll';
 import logo2 from '../assets/logo2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faWhatsapp, faDiscord, faMicrosoft} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram,faLinkedin,faGithub, faWhatsapp, faDiscord, faMicrosoft} from '@fortawesome/free-brands-svg-icons'
 
 
 const Navbar = () => {
@@ -54,6 +54,8 @@ const Navbar = () => {
                     <Link to="contact" smooth={true} duration={500} className='nav-button'>Contact</Link>
                 </div>
                 <div className='icon-content'>
+                    <a className='brand-icon' href="https://www.instagram.com/mlscmitadt/" target='_blank'><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a className='brand-icon' href="https://www.linkedin.com/company/mlscmitadtu/" target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
                     <a className='brand-icon' href="https://discord.gg/b5zgc9XRaA" target='_blank'><FontAwesomeIcon icon={faDiscord} /></a>
                     <a className='brand-icon' href="https://chat.whatsapp.com/CVdLrkQgRqe2grRIQdMF07" target='_blank' ><FontAwesomeIcon icon={faWhatsapp} /></a>
                     <a className='brand-icon' href="https://github.com/MLSC-MIT-ADT" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>

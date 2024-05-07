@@ -28,11 +28,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-image: url('../assets/B_event.png');
+    /* Replace 'your-background-image-url.jpg' with the URL or path to your background image */
+    background-size: cover;
+    /* Ensure the background image covers the entire div */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
 }
 
 
 .event-name {
+    margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -41,23 +49,34 @@
 
 .poster {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-
-    img {
-        object-fit: cover;
-        margin-bottom: 20px;
-        width: 50%;
-        border-radius: 5%;
-    }
-
-    .why {
-        padding: 20px 0;
-    }
+    justify-content: center;
+    gap: 30px;
 }
 
+.poster img {
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+.poster img:nth-child(1),
+.poster img:nth-child(3) {
+    width: 25%;
+}
+
+.poster img:nth-child(2) {
+    width: 40%;
+}
+
+.why {
+    padding: 20px 0;
+}
+
+
 .reg-button {
-    margin: 20px auto;
+    margin: 15px auto;
     min-width: max-content;
     width: 50%;
     padding: 4px;
@@ -96,5 +115,27 @@
 
     .reg-button {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust the breakpoint as needed */
+    .poster {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster img:nth-child(1),
+    .poster img:nth-child(3) {
+        width: 50%;
+        /* Adjust as needed */
+    }
+
+    .poster img:nth-child(2) {
+        order: -1;
+        /* Move the second image to the top */
+        width: 80%;
+        /* Adjust as needed */
     }
 }
